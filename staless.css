@@ -1,0 +1,135 @@
+body, .signup-container, .login-container, input, button, label, p, h1, a {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.back-button {
+    background-color: #00adb5;
+    border-radius: 50%;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: -450px; /* Raise the arrow slightly */
+    right: 20px; /* Adjust left margin for better positioning */
+}
+
+.back-button:hover {
+    background-color: #007f87;
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+.back-icon {
+    width: 42px;
+    height: 42px;
+    transform: rotate(180deg); /* Reverse the arrow direction */
+}
+/* General container styling */
+.signup-container,
+.login-container {
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #222831; /* Dark background */
+    color: #eeeeee; /* Light text */
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Input fields */
+.signup-container input,
+.login-container input {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border: 1px solid #00adb5; /* Teal border */
+    border-radius: 5px;
+    background-color: #393e46; /* Slightly lighter dark background */
+    color: #eeeeee; /* Light text */
+}
+
+/* Buttons */
+.signup-container button,
+.login-container button {
+    background-color: #00adb5; /* Teal button */
+    color: #fff; /* White text */
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.signup-container button:hover,
+.login-container button:hover {
+    background-color: #007f87; /* Darker teal on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Links */
+.signup-container .link,
+.login-container .link {
+    color: #00adb5; /* Teal links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup-container .link:hover,
+.login-container .link:hover {
+    text-decoration: underline;
+}
+
+/* Headings */
+.signup-container h1,
+.login-container h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #eeeeee; /* Light text */
+}
+
+/* Back Button */
+.back-button {
+    background-color: #00adb5; /* Teal background */
+    border-radius: 50%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.back-button:hover {
+    background-color: #007f87; /* Darker teal on hover */
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+.back-icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* Paragraphs */
+.signup-container p,
+.login-container p {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #eeeeee; /* Light text */
+}
+@media (max-width: 500px) {
+  .auth-container {
+    width: 95% !important;
+    padding: 1rem !important;
+  }
+  .signup-container, .login-container {
+    max-width: 100% !important;
+    padding: 1rem !important;
+  }
+}

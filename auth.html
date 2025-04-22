@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up / Log In</title>
+  <meta name="description" content="Sign up or log in to access our services.">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="staless.css"> <!-- Link to your CSS file -->
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f4f4f4; /* لون الخلفية الرئيسي */
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .auth-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #fff; /* لون الخلفية للعناصر */
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 400px;
+    }
+
+    .signup-container,
+    .login-container {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+
+    .signup-container h1,
+    .login-container h1 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      color: #333; /* لون العناوين */
+    }
+
+    .form-group {
+      margin-bottom: 1rem;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+      color: #555; /* لون التسميات */
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+
+    button {
+      width: 100%;
+      padding: 0.75rem;
+      background-color: #00adb5; /* اللون الأساسي */
+      color: #fff; /* لون النص */
+      border: none;
+      border-radius: 4px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #007f87; /* اللون الثانوي (hover) */
+    }
+
+    .link {
+      color: #00adb5; /* اللون الأساسي */
+      text-decoration: none;
+    }
+
+    .link:hover {
+      text-decoration: underline;
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="auth-container">
+    <!-- نموذج التسجيل -->
+    <div class="signup-container">
+      <h1>Sign Up</h1>
+      <form id="signupForm">
+        <div id="signupMessage" style="margin-bottom: 1em; font-weight: bold;"></div>
+        <div id="signupError" style="color: #f44336; font-size: 0.9em;"></div>
+        <div id="signupSuccess" style="color: #4CAF50; font-size: 0.9em;"></div>
+        <div class="form-group">
+          <label for="signupUsername">Username</label>
+          <input type="text" id="signupUsername" name="signupUsername" placeholder="Username" required required aria-label="Username">
+          <span id="signupUsernameError" style="color: #f44336; font-size: 0.9em;"></span>
+        </div>
+        <div class="form-group">
+          <label for="signupEmail">Email</label>
+          <input type="email" id="signupEmail" name="signupEmail" placeholder="Email" required required aria-label="Email">
+          <span id="signupEmailError" style="color: #f44336; font-size: 0.9em;"></span>
+        </div>
+        <div class="form-group">
+          <label for="signupPassword">Password</label>
+          <input type="password" id="signupPassword" name="signupPassword" placeholder="Password" required required aria-label="Password">
+          <span id="signupPasswordError" style="color: #f44336; font-size: 0.9em;"></span>
+        </div>
+        <div class="form-group">
+          <label for="signupConfirmPassword">Confirm Password</label>
+          <input type="password" id="signupConfirmPassword" name="signupConfirmPassword" placeholder="Confirm Password"  required required aria-label="Confirm Password">
+          <span id="signupConfirmPasswordError" style="color: #f44336; font-size: 0.9em;"></span>
+        </div>
+        <button type="submit">Sign Up</button>
+        <div id="signupLoading" style="display:none; text-align:center; margin-top:10px;">
+          <span>Loading...</span>
+        </div>        
+      </form>
+      <p>Already have an account? <a href="#" class="link" id="goToLogin">Log In</a></p>
+    </div>
+
+    <!-- نموذج الدخول -->
+    <div class="login-container hidden">
+      <h1>Log In</h1>
+      <form id="loginForm">
+        <div class="form-group">
+          <label for="loginEmail">Email:</label>
+          <input type="email" id="loginEmail" name="loginEmail" placeholder="Email" required>
+        </div>
+        <div class="form-group">
+          <label for="loginPassword">Password:</label>
+          <input type="password" id="loginPassword" name="loginPassword" placeholder="Password" required>
+        </div>
+        <button type="submit">Log In</button>
+      </form>
+      <p>Don't have an account? <a href="#" class="link" id="goToSignup">Sign Up</a></p>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const signupContainer = document.querySelector('.signup-container');
+      const loginContainer = document.querySelector('.login-container');
+      const goToLogin = document.querySelector('#goToLogin');
+      const goToSignup = document.querySelector('#goToSignup');
+      const signupForm = document.querySelector('#signupForm');
+      const loginForm = document.querySelector('#loginForm');
+
+      // إخفاء نموذج الدخول في البداية
+      loginContainer.classList.add('hidden');
+
+      goToLogin.addEventListener('click', function(event) {
+        event.preventDefault();
+        signupContainer.classList.add('hidden');
+        loginContainer.classList.remove('hidden');
+      });
+
+      goToSignup.addEventListener('click', function(event) {
+        event.preventDefault();
+        loginContainer.classList.add('hidden');
+        signupContainer.classList.remove('hidden');
+      });
+
+      signupForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+        // هنا يمكنك إضافة كود لمعالجة بيانات التسجيل
+        const username = document.querySelector('#signupUsername').value;
+        const email = document.querySelector('#signupEmail').value;
+        const password = document.querySelector('#signupPassword').value;
+        const confirmPassword = document.querySelector('#signupConfirmPassword').value;
+
+        if (password !== confirmPassword) {
+          alert('Passwords do not match!');
+          return;
+        }
+
+        // يمكنك إرسال البيانات إلى الخادم باستخدام AJAX
+        console.log('Signing up with:', username, email, password);
+      });
+
+      loginForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+        // هنا يمكنك إضافة كود لمعالجة بيانات الدخول
+        const email = document.querySelector('#loginEmail').value;
+        const password = document.querySelector('#loginPassword').value;
+
+        // يمكنك إرسال البيانات إلى الخادم باستخدام AJAX
+        console.log('Logging in with:', email, password);
+      });
+
+      const buttons = document.querySelectorAll('.signup-container button, .login-container button');
+
+      buttons.forEach(button => {
+        button.addEventListener('click', function() {
+          button.classList.add('clicked'); // إضافة فئة "clicked" عند النقر
+          setTimeout(() => {
+            button.classList.remove('clicked'); // إزالة الفئة بعد 0.5 ثانية
+          }, 500);
+        });
+      });
+    });
+  </script>
+</body>
+</html>
+<a href="index2.html" class="back-button">
+
+  <img src="https://cdn-icons-png.freepik.com/256/608/608095.png?semt=ais_hybrid" alt="Back to Home" class="back-icon">
+</a>
+

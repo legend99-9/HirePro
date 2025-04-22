@@ -1,0 +1,1888 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Poppins", serif;
+}
+header {
+  display: flex;
+  justify-content: space-between; /* توزيع العناصر على كامل المساحة */
+  align-items: center; /* محاذاة العناصر عمودياً في المنتصف */
+  padding: 1rem 2rem; /* إضافة مساحة حول الهيدر */
+  max-width: 1200px;
+  margin: 0 auto; /* توسيط الهيدر أفقياً */
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+}
+
+.logo h1 {
+  font-size: 2.5rem; /* حجم الخط */
+  font-weight: bold; /* جعل الخط عريضًا */
+  color: #eeeeee; /* لون النص */
+}
+
+header a[href="auth.html"] { /* استهداف زر Sign Up في الهيدر فقط */
+  display: inline-block;
+  padding: 6px 5px;
+  background-color: #00adb5;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+header a[href="auth.html"]:hover {
+  background-color: #007f87;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+}
+
+
+
+header {
+  display: flex;
+  justify-content: flex-end; /* محاذاة العناصر إلى اليمين */
+  align-items: center;
+}
+header {
+  display: flex;
+  justify-content: flex-end; /* محاذاة العناصر إلى اليمين */
+  align-items: center;
+}
+
+header {
+  display: flex; /* استخدام Flexbox لتسهيل المحاذاة */
+  justify-content: center; /* توسيط العناصر أفقياً */
+}
+
+.logo {
+  margin-bottom: 10px; /* إضافة مساحة أسفل الشعار */
+}
+
+.search-bar {
+  margin-bottom: 10px; /* إضافة مساحة أسفل شريط البحث */
+}
+hr {
+  border: none; /* إزالة الحدود الافتراضية */
+  height: 2px; /* تحديد ارتفاع الخط */
+  background-color: #00adb5; /* تحديد لون الخط */
+  opacity: 0.2; /* جعل الخط شبه شفاف */
+  margin: 1rem 0; /* إضافة بعض المسافة أعلى وأسفل */
+}
+
+
+/* Navigation Bar Fix */
+header .navigation ul {
+  display: flex;
+  list-style: none; /* Remove default list styling */
+  gap: 2rem; /* Add spacing between navigation links */
+  margin: 0;
+  padding: 0;
+  justify-content: center; /* Center the navigation links horizontally */
+  align-items: center; /* Align links vertically */
+}
+
+header .navigation ul li {
+  margin: 0; /* Remove extra margins */
+}
+#navbar {
+  display: flex;
+  justify-content: space-evenly; /* توزيع الروابط بالتساوي */
+  align-items: center; /* محاذاة الروابط عموديًا */
+  background-color: #333; /* لون خلفية شريط التنقل */
+  padding: 10px 0;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: #20B2AA; /* لون النص */
+  font-size: 18px; /* حجم الخط */
+  font-weight: bold;
+  padding: 5px 10px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+.navigation ul li a {
+  font-size: 17px; /* تقليل حجم الخط */
+}
+
+#navbar a:hover {
+  color: #fff; /* تغيير اللون عند التمرير */
+  background-color: #18A1A7; /* خلفية مميزة عند التمرير */
+  border-radius: 5px; /* حواف دائرية */
+}
+header .navigation a {
+  text-decoration: none;
+  color: #eeeeee;
+  font-weight: bold;
+  font-size: 1.2rem; /* Adjust font size for better readability */
+  text-align: center; /* Center-align the text */
+  transition: color 0.3s ease;
+}
+
+header .navigation a:hover {
+  color: #00adb5; /* Highlight link on hover */
+}
+
+/* Fix for Header Alignment */
+header {
+  display: flex;
+  justify-content: space-between; /* Space between logo, search bar, and nav */
+  align-items: center; /* Align items vertically in the center */
+  padding: 1rem 2rem; /* Add padding around the header */
+  max-width: 1200px;
+  margin: 0 auto; /* Center the header horizontally */
+}
+header .logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* Add spacing between the two logos */
+}
+
+header .search-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* Add spacing between the input and button */
+}
+
+header .search-bar input {
+  padding: 0.5rem;
+  font-size: 16px;
+  border: 1px solid #00adb5;
+  border-radius: 4px;
+  width: 250px; /* Adjust the width of the search input */
+}
+
+header .search-bar button {
+  padding: 0.5rem 1rem;
+  background-color: #00adb5;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+header .search-bar button img {
+  width: 16px;
+  height: 16px;
+}
+
+header .search-bar button:hover {
+  background-color: #007f87;
+}
+
+header .sections nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem; /* Add spacing between navigation links */
+  margin: 0;
+  padding: 0;
+}
+
+header .sections nav ul li a {
+  text-decoration: none;
+  color: #eeeeee;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+header .sections nav ul li a:hover {
+  color: #00adb5;
+}
+body {
+  background-color: #222831;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+body {
+  line-height: 0.8; /* تقليل المسافة بين الخطوط في كامل الصفحة */
+}
+p.my-paragraph {
+  line-height: 0.8 !important; /* استخدام !important لتجاوز أي CSS آخر */
+}
+/* Header Styling */
+#mainHeader {
+  padding: 8px 20px;         /* Was 15px 30px */
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#logo {
+  width: 36px;               /* Was 50px */
+  margin-right: 8px;
+}
+
+#title {
+  font-size: 16px;           /* Was 18px */
+}
+
+#navbar {
+  gap:5px;                 /* Was 15px */
+}
+
+#navbar a {
+  font-size: 1em;         /* Was 1em or larger */
+  padding: 3px 8px;          /* Was 5px 10px */
+  border-radius: 3px;        /* Was 4px */
+}
+
+/* Sign Up Button Styling */
+.signup-header-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(90deg, #00adb5 0%, #007f87 100%);
+  color: #ffffff;
+  padding: 0.5em 1.2em; /* Adjusted padding for better size */
+  border-radius: 24px; /* Smooth rounded corners */
+  font-weight: 600;
+  font-size: 1rem; /* Consistent font size */
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(0, 173, 181, 0.15);
+  transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-left: 1rem; /* Add spacing from other links */
+  font-family: 'Poppins', sans-serif;
+}
+
+.signup-header-btn:hover,
+.signup-header-btn:focus {
+  background: linear-gradient(90deg, #007f87 0%, #00adb5 100%);
+  transform: translateY(-2px) scale(1.05); /* Slight hover effect */
+  box-shadow: 0 4px 16px rgba(0, 173, 181, 0.25);
+  text-decoration: none;
+}
+
+.signup-header-btn svg {
+  stroke: #ffffff;
+  transition: stroke 0.3s;
+  margin-left: 0.5rem; /* Add spacing between text and arrow */
+}
+
+/* Navigation Bar Links */
+#navbar a {
+  font-size: 1rem; /* Consistent font size */
+  padding: 0.4em 0.8em; /* Adjusted padding for better alignment */
+  border-radius: 4px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+#navbar a:not(.signup-header-btn):hover {
+  background-color: #18A1A7; /* Highlight background for other links */
+  color: white;
+}
+
+
+
+/* Search Form */
+#searchForm {
+  display: flex;
+  align-items: center;
+}
+
+#searchInput {
+  padding: 5px 10px;
+  font-size: 14px;
+  border: 1px solid #20B2AA;
+  border-radius: 4px;
+  margin-right: 5px;
+}
+
+#searchButton {
+  padding: 5px 10px;
+  font-size: 14px;
+  background-color: #20B2AA;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#searchButton:hover {
+  background-color: #18A1A7;
+}
+#mainHeader {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Keeps it above other content */
+}
+body {
+  margin-top: 80px; /* Prevents content overlap with the fixed header */
+}
+.logo {
+  margin-left: -20px; /* دفع الشعار إلى اليسار */
+}
+
+.sections {
+  margin-right: -20px; /* دفع الأقسام إلى اليمين */
+}
+
+.search-bar {
+  flex-grow: 1.5; /* زيادة قيمة flex-grow */
+  margin: 0 20px;
+}
+
+.search-bar input[type="text"] {
+  padding: 8px;
+  border: 1px solid #00adb5;
+  border-radius: 4px;
+  width: 100%;
+}
+.element {
+  line-height: 0.8; /* مثال: تقليل المسافة بين الخطوط بنسبة 20% */
+}
+
+.logo {
+  margin-left: -20px; /* دفع الشعار إلى اليسار */
+}
+
+.sections {
+  margin-right: -30; /* دفع الأقسام إلى اليمين */
+}
+.search-bar {
+  flex-grow: 1.5; /* زيادة قيمة flex-grow */
+  margin: 0 20px;
+}
+.search-bar {
+  width: 330px; /* تحديد عرض ثابت أكبر لمربع البحث */
+  margin: 0 80px;
+}
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* تأكد من محاذاة العناصر عموديًا */
+  padding: 10px 15px; /* المساحة حول الشريط */
+  position: relative; /* أو ثابت لإصلاح الشريط */
+  top: -10px; /* هذا يرفع الشريط للأعلى */
+}
+
+#searchForm {
+  display: flex;
+  align-items: center;
+  margin-top: -5px; /* لتقريب البحث رأسياً */
+}
+
+nav a {
+  line-height: -5; /* لضبط ارتفاع النصوص */
+}
+header nav a {
+  text-decoration: none;
+  color: white;
+  margin: 0 10px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse; /* عكس ترتيب العناصر */
+  margin-top: 10px; /* تنزيل منطقة البحث قليلاً */
+}
+.search-bar button[type="submit"] {
+  padding: 0; /* Remove default button padding */
+  background-color: transparent; /* Make the background transparent */
+  border: none; /* Remove the border */
+  cursor: pointer;
+  width: 50px; /* Set the width of the button */
+  height: 38px; /* Set the height of the button */
+  overflow: hidden; /* Ensure the image doesn't overflow */
+}
+
+.search-bar button[type="submit"] img {
+  width: 100%; /* Make the image fill the button width */
+  height: 100%; /* Make the image fill the button height */
+  object-fit: contain; /* Maintain aspect ratio and fit inside the button */
+  display: block; /* Remove any extra spacing around the image */
+}
+
+
+.search-bar button[type="submit"] {
+  padding: 8px 12px;
+  background-color: #00adb5;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+header nav a {
+  text-decoration: none;
+  color: white;
+  margin: 0 10px;
+}
+.sections nav ul {
+  display: flex;
+  list-style: none; /* لإزالة النقاط من القائمة */
+  padding: 0; /* لإزالة المساحة الداخلية الافتراضية */
+  margin: 0; /* لإزالة الهوامش الافتراضية */
+}
+
+.sections nav ul li {
+  margin: 0 10px; /* لإضافة مسافة بين العناصر */
+}
+
+.navigation ul {
+  display: flex;
+  list-style-type: none;
+  gap: 3rem;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #eeeeee;
+}
+
+.navigation a:hover {
+  color: #00adb5;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem auto;
+  max-width: 1000px;
+}
+header img {
+  width: 200px; /* Adjust logo size */
+  height: auto;
+  margin-bottom: 1rem; /* Add spacing below the logo */
+}
+#searchForm {
+  display: flex;
+  align-items: center;
+}
+
+#searchInput {
+  padding: 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#searchButton {
+  padding: 5px 10px;
+  font-size: 16px;
+  background-color: #555;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-left: 5px;
+  border-radius: 4px;
+}
+
+#searchButton:hover {
+  background-color: #777;
+}
+header nav a {
+  text-decoration: none;
+  color: white;
+  margin: 0 10px;
+}
+
+#searchForm {
+  display: flex;
+  align-items: center;
+}
+
+#searchInput {
+  padding: 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#searchButton {
+  padding: 5px 10px;
+  font-size: 16px;
+  background-color: #555;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-left: 5px;
+  border-radius: 4px;
+}
+
+#searchButton:hover {
+  background-color: #777;
+}
+.navigation ul {
+  display: flex;
+  list-style-type: none;
+  gap: 2rem;
+}
+.navigation a {
+  text-decoration: none;
+  color: #eeeeee;
+}
+
+.navigation a:hover {
+  color: #00adb5;
+}
+
+hr {
+  opacity: 10%;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5rem auto;
+  max-width: 1200px;
+}
+.arrow {
+  position: absolute;
+  transform: translateX(-5.5rem) translateY(1.5rem);
+}
+
+.heroSub {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.name {
+  font-size: 3rem;
+  color: #eeeeee;
+}
+
+.title {
+  font-size: 3.2rem;
+  color: #00adb5;
+}
+.heroBtns {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+.hireMe {
+  background-color: #00adb5;
+  color: #eeeeee;
+  border-radius: 24px;
+  text-decoration: none;
+  padding: 0.5rem 1.5rem;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+.cv {
+  background-color: rgba(57, 62, 70, 0.75);
+  color: #eeeeee;
+  border-radius: 24px;
+  text-decoration: none;
+  padding: 0.5rem 1.5rem;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  backdrop-filter: blur(4px);
+}
+
+.aboutMe {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5rem auto;
+  max-width: 1200px;
+  gap: 10rem;
+  color:#eeeeee;
+}
+.textContainer {
+  display: flex;
+  flex-direction: column;
+}
+.textTitle {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 2rem;
+}
+.aboutName {
+  color: #eeeeee;
+}
+.aboutTitle {
+  color: #00adb5;
+}
+.aboutMeParagraf {
+  text-align: justify;
+  color: #eeeeee;
+}
+
+works {
+  background-image: url("assets/svg/background.svg");
+  padding: 10rem 10rem;
+  margin: 5rem 0;
+}
+worksContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin: 5rem auto;
+  max-width: 1200px;
+}
+
+.projectTitle {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 5px;
+  font-size: 2rem;
+}
+.aboutName,
+.aboutTitle,
+.projectTitle h1,
+.contactTitle h1 {
+  font-size: 3rem; /* Increase font size */
+  margin-bottom: 1rem; /* Add spacing below */
+  text-align: center; /* Center-align the text */
+}
+
+.contactTitle {
+  margin-top: 5rem; /* Add spacing above the "Contact Me" section */
+}
+
+.projectTitle {
+  margin-top: rem; /* Add spacing above the "My Works" section */
+}
+
+.works ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  justify-content: space-between;
+}
+works li {
+  border-radius: 16px;
+  background-color: rgba(57, 62, 70, 0.5);
+  backdrop-filter: blur(4px);
+  padding: 1rem 4rem;
+  transition: transform 0.2s;
+}
+works li img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+}
+works li:hover {
+  transform: scale(1.1);
+}
+
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;
+  margin: 2rem auto;
+  max-width: 1200px;
+}
+.contactTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5rem;
+  gap: 20rem;
+}
+.contact h3,
+.contact a {
+  color: #eeeeee;
+  text-decoration: none;
+}
+.emailAndPhone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.socialMedia {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+.socialMedia a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  background-color: rgba(57, 62, 70, 0.5);
+  backdrop-filter: blur(4px);
+  padding: 1rem;
+}
+.socialMedia img {
+  width: 24px;
+  height: 24px;
+}
+
+footer {
+  color: #eeeeee;
+  padding: 2rem;
+  text-align: center;
+}
+
+@media (max-width: 1023px) {
+  header {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  .heroImg {
+    width: 400px;
+  }
+  .name,
+  .title {
+    font-size: 2rem;
+  }
+  .arrow {
+    display: none;
+  }
+  .aboutMe {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 2rem;
+  }
+  .textContainer {
+    align-items: center;
+    margin: 0rem 5rem;
+    gap: 1rem;
+  }
+  .aboutName,
+  .aboutTitle {
+    font-size: 2rem;
+  }
+  .light {
+    width: 60px;
+  }
+  .aboutMeImg {
+    width: 400px;
+  }
+  .works {
+    padding: 0;
+  }
+  .worksContainer {
+    padding: 5rem 0rem;
+    gap: 3rem;
+  }
+  .projectTitle {
+    margin-left: 1rem;
+  }
+  .works ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .contactContainer {
+    margin: 10rem 5rem;
+    gap: 2rem;
+  }
+  .contact {
+    flex-direction: column;
+    gap: 1rem;
+    margin-right: 0;
+  }
+}
+
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Poppins", serif;
+}
+
+body {
+  background-color: #222831;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem auto;
+  max-width: 1200px;
+}
+
+.logo {
+  width: 250px; /* Adjusted logo width */
+  height: auto;
+}
+
+.navigation ul {
+  display: flex;
+  list-style-type: none;
+  gap: 2rem;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #eeeeee;
+}
+
+.navigation a:hover {
+  color: #00adb5;
+}
+
+hr {
+  opacity: 10%;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5rem auto;
+  max-width: 1200px;
+}
+
+.arrow {
+  position: absolute;
+  transform: translateX(-5.5rem) translateY(1.5rem);
+}
+
+.heroSub {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.name {
+  font-size: 3rem;
+  color: #eeeeee;
+}
+
+.title {
+  font-size: 4rem;
+  color: #00adb5;
+}
+
+.heroBtns {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.hireMe {
+  background-color: #00adb5;
+  color: #eeeeee;
+  border-radius: 24px;
+  text-decoration: none;
+  padding: 0.5rem 1.5rem;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.cv {
+  background-color: rgba(57, 62, 70, 0.75);
+  color: #eeeeee;
+  border-radius: 24px;
+  text-decoration: none;
+  padding: 0.5rem 1.5rem;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  backdrop-filter: blur(4px);
+}
+
+.aboutMe {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5rem auto;
+  max-width: 1200px;
+  gap: 10rem;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.textTitle {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 2rem;
+}
+
+.aboutName {
+  color: #eeeeee;
+}
+
+.aboutTitle {
+  color: #00adb5;
+}
+
+.aboutMeParagraf {
+  text-align: justify;
+  color: rgba(238, 238, 238, 0.75);
+}
+
+.works {
+  background-image: url("assets/svg/background.svg");
+  padding: 10rem 10rem;
+  margin: 5rem 0rem;
+}
+
+.worksContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: left;
+  margin: 5rem auto;
+  max-width: 1200px;
+}
+
+.projectTitle {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 5px;
+  font-size: 2rem;
+}
+
+.works ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.works li {
+  border-radius: 16px;
+  background-color: rgba(57, 62, 70, 0.5);
+  backdrop-filter: blur(4px);
+  padding: 1rem 4rem;
+}
+
+.works li img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  transition: transform 0.2s;
+}
+
+.works li:hover {
+  transform: scale(1.5);
+}
+
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;
+  margin: 2rem auto;
+  max-width: 1200px;
+}
+
+.contactTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5rem;
+  gap: 20rem;
+}
+
+.contact h3,
+.contact a {
+  color: #eeeeee;
+  text-decoration: none;
+}
+
+.emailAndPhone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.socialMedia {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.socialMedia a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  background-color: rgba(57, 62, 70, 0.5);
+  backdrop-filter: blur(4px);
+  padding: 1rem;
+}
+
+.socialMedia img {
+  width: 24px;
+  height: 24px;
+}
+
+footer {
+  color: #eeeeee;
+  padding: 2rem;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  /* Adjust header */
+  header {
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem auto;
+    gap: 1rem;
+  }
+  header img {
+    width: 150px; /* Smaller logo for phones */
+  }
+  .navigation ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  /* Hero section adjustments */
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+    margin: 2rem auto;
+    padding: 1rem;
+  }
+  .heroImg {
+    width: 300px; /* Smaller hero image */
+  }
+  .name,
+  .title {
+    font-size: 1.5rem; /* Smaller font size for titles */
+  }
+  .heroBtns {
+    flex-direction: center;
+    gap: 1rem;
+  }
+
+  /* About Me section adjustments */
+  .aboutMe {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem auto;
+    padding: 1rem;
+  }
+  .aboutMeImg {
+    width: 300px; /* Smaller image */
+  }
+  .textContainer {
+    text-align: center;
+    margin: 0;
+  }
+  .aboutName,
+  .aboutTitle {
+    font-size: 1.5rem; /* Smaller font size */
+  }
+
+  /* Works section adjustments */
+  .works {
+    padding: 2rem 1rem;
+  }
+  .works ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .works li img {
+    width: 150px;
+    height: 150px;
+  }
+
+  /* Contact section adjustments */
+  .contactContainer {
+    margin: 2rem auto;
+    padding: 1rem;
+    gap: 1.5rem;
+  }
+  .contact {
+    flex-direction: column;
+    gap: 1rem;
+    margin-right: 0;
+  }
+  .socialMedia {
+    gap: 1rem;
+  }
+  .socialMedia img {
+    width: 20px;
+    height: 20px;
+  }
+
+  /* Footer adjustments */
+  footer {
+    font-size: 0.9rem;
+  }
+}
+
+/* CSS */
+#backToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #00adb5;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  display: none;
+}
+
+#backToTop:hover {
+  background-color: #007f87;
+}
+.hireMe:hover, .cv:hover {
+  background-color: #007f87;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+/* تأثير عند ظهور الأقسام */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+section {
+  animation: fadeIn 1s ease-in-out;
+}
+.signup-container {
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #222831;
+  color: #eeeeee;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.signup-container input {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border: 1px solid #00adb5;
+  border-radius: 5px;
+}
+
+.signup-container button {
+  background-color: #00adb5;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.signup-container button:hover {
+  background-color: #007f87;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+#addJob {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  border-radius: 10px;
+  text-align: center;
+}
+
+#addJob h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+#jobForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#jobForm input,
+#jobForm textarea {
+  padding: 0.5rem;
+  border: 1px solid var(--accent-color);
+  border-radius: 5px;
+}
+
+#jobForm button {
+  background-color: var(--accent-color);
+  color: var(--text-color);
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#jobForm button:hover {
+  background-color: var(--hover-color);
+}
+:root {
+  --background-color: #222831;
+  --text-color: #eeeeee;
+  --accent-color: #00adb5;
+  --hover-color: #007f87;
+}
+
+.light-mode {
+  --background-color: #ffffff;
+  --text-color: #222831;
+  --accent-color: #007f87;
+  --hover-color: #005f6b;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+/* General container styling */
+.signup-container,
+.login-container {
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #222831;
+  color: #eeeeee;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Input fields */
+.signup-container input,
+.login-container input {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border: 1px solid #00adb5;
+  border-radius: 5px;
+  background-color: #393e46;
+  color: #eeeeee;
+}
+
+/* Buttons */
+.signup-container button,
+.login-container button {
+  background-color: #00adb5;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.signup-container button:hover,
+.login-container button:hover {
+  background-color: #007f87;
+}
+
+/* Links */
+.signup-container .link,
+.login-container .link {
+  color: #00adb5;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.signup-container .link:hover,                          light
+.login-container .link:hover {
+  text-decoration: underline;
+}
+
+/* Headings */
+.signup-container h1,
+.login-container h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Paragraphs */
+.signup-container p,
+.login-container p {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+.form-container {
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #222831;
+  color: #eeeeee;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.form-container input {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border: 1px solid #00adb5;
+  border-radius: 5px;
+  background-color: #393e46;
+  color: #eeeeee;
+}
+
+.form-container button {
+  background-color: #00adb5;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.form-container button:hover {
+  background-color: #007f87;
+}
+
+.form-container .link {
+  color: #00adb5;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.form-container .link:hover {
+  text-decoration: underline;
+}
+
+.form-container h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.form-container p {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+.form-container {
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #222831;
+  color: #eeeeee;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.form-container input {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border: 1px solid #00adb5;
+  border-radius: 5px;
+  background-color: #393e46;
+  color: #eeeeee;
+}
+
+.form-container button {
+  background-color: #00adb5;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.form-container button:hover {
+  background-color: #007f87;
+}
+
+.form-container .link {
+  color: #00adb5;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.form-container .link:hover {
+  text-decoration: underline;
+}
+
+.form-container h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.form-container p {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+h1, h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Form Styling */
+form {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 15px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form input, form textarea, form button {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+/* Job Listings */
+.jobs-container {
+  list-style: none;
+  padding: 0;
+}
+
+.jobs-container li {
+  margin: 10px 0;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #f9f9f9;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.jobs-container li:hover {
+  transform: scale(1.02);
+  opacity: 0.9;
+}
+
+/* Back to Top Button */
+#backToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+  z-index: 1000;
+}
+
+#backToTop:hover {
+  background-color: #0056b3;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.jobs-container li.dark-mode {
+  background: #333333;
+  color: #ffffff;
+}
+
+/* Media Query */
+@media (max-width: 768px) {
+  form input, form textarea, form button {
+    width: 100%;
+  }
+
+  #backToTop {
+    bottom: 10px;
+    right: 10px;
+  }
+}
+#signupFormContainer, #loginFormContainer, #addJob {
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#signupFormContainer h1, #loginFormContainer h1, #addJob h2 {
+  text-align: center;
+}
+
+input, textarea, button {
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+
+button:hover {
+  background-color: #007f87;
+}
+/* Default Dark Mode */
+body {
+  background-color: #222831; /* Dark background */
+  color: #eeeeee; /* Light text */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Buttons */
+button {
+  background-color: #00adb5; /* Teal button color */
+  color: #ffffff; /* White text */
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #007f87; /* Darker teal on hover */
+}
+
+/* Forms */
+#signupFormContainer, #loginFormContainer, #addJob {
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #393e46; /* Darker form background */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#signupFormContainer h1, #loginFormContainer h1, #addJob h2 {
+  text-align: center;
+  color: #eeeeee; /* Light text for headings */
+}
+
+input, textarea {
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border: 1px solid #00adb5; /* Teal border */
+  border-radius: 5px;
+  background-color: #222831; /* Dark input background */
+  color: #eeeeee; /* Light text */
+}
+
+input::placeholder, textarea::placeholder {
+  color: #aaaaaa; /* Light gray placeholder text */
+}
+
+/* Links */
+a {
+  color: #00adb5; /* Teal links */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  color: #eeeeee;
+  text-align: center;
+  padding: 2rem;
+}
+/* Hero Section Text */
+.heroSub .name {
+  font-size: 3rem; /* Large font size for the name */
+  font-weight: bold; /* Bold text */
+  color: #ffffff; /* White text for visibility */
+  margin: 0;
+  text-align: left;
+}
+
+.heroSub .title {
+  font-size: 2.5rem; /* Slightly smaller font size for the title */
+  font-weight: normal; /* Normal weight for the title */
+  color: #00adb5; /* Teal color for the title */
+  margin: 0.5rem 0 0; /* Add spacing between the name and title */
+  text-align: center;
+}
+#signUpButton {
+  pointer-events: auto; /* Ensure the button responds to clicks */
+}
+@media (max-width: 768px) {
+  header {
+    flex-direction: column; /* Stack logo, search bar, and nav vertically */
+    align-items: center; /* Center-align all elements */
+    gap: 1rem; /* Add spacing between elements */
+  }
+
+  #searchForm {
+    width: 100%; /* Make the search bar take full width */
+    display: flex;
+    justify-content: center; /* Center the search bar */
+    margin: 0; /* Remove extra margins */
+  }
+
+  #searchInput {
+    flex: 1; /* Allow the input to grow */
+    max-width: 80%; /* Limit the width of the input */
+  }
+
+  #searchButton {
+    margin-left: 0.5rem; /* Add spacing between the input and button */
+  }
+
+  .navigation ul {
+    flex-direction: column; /* Stack navigation links vertically */
+    gap: 1rem; /* Add spacing between links */
+    text-align: center; /* Center-align the links */
+  }
+
+  .navigation a {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+  }
+}
+/* General container styling */
+.signup-container,
+.login-container {
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #222831;
+    color: #eeeeee;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Input fields */
+.signup-container input,
+.login-container input {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border: 1px solid #00adb5;
+    border-radius: 5px;
+    background-color: #393e46;
+    color: #eeeeee;
+}
+
+/* Buttons */
+.signup-container button,
+.login-container button {
+    background-color: #00adb5;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.signup-container button:hover,
+.login-container button:hover {
+    background-color: #007f87;
+}
+
+/* Links */
+.signup-container .link,
+.login-container .link {
+    color: #00adb5;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup-container .link:hover,
+.login-container .link:hover {
+    text-decoration: underline;
+}
+
+/* Headings */
+.signup-container h1,
+.login-container h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Paragraphs */
+.signup-container p,
+.login-container p {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+.signup-container button,
+.login-container button {
+    /* ... بقية التنسيقات ... */
+    transition: background-color 0.3s ease; /* إضافة transition لتغيير لون الخلفية */
+}
+
+.signup-container button:active,
+.login-container button:active {
+    background-color: #007f87; /* تغيير لون الخلفية عند النقر */
+    transform: scale(0.95); /* تقليل حجم الزر قليلاً عند النقر */
+    transition: transform 0.1s ease; /* إضافة transition لتغيير الحجم */
+}
+@keyframes buttonClick {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.1);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+.signup-container button:active,
+.login-container button:active {
+    animation: buttonClick 0.5s ease; /* تطبيق الـ animation عند النقر */
+}
+.signup-container button.clicked,
+.login-container button.clicked {
+    animation: buttonClick 0.5s ease; /* تطبيق الـ animation عند إضافة الفئة */
+}
+.signup-container button.clicked,
+.login-container button.clicked {
+    animation: buttonClick 0.5s ease; /* تطبيق الـ animation عند إضافة الفئة */
+}
+body, .signup-container, .login-container, input, button, label, p, h1, a {
+    font-family: 'Poppins', sans-serif !important;
+}
+.signup-header-btn {
+  display: inline-flex;
+  align-items: center;
+  background: linear-gradient(90deg, #00adb5 0%, #007f87 100%);
+  color: #fff;
+  padding: 0.4em 1em;         /* Reduced padding */
+  border-radius: 24px;         /* Slightly smaller radius */
+  font-weight: 600;
+  font-size: 1em;              /* Slightly smaller font */
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(0,173,181,0.15);
+  transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-left: 1em;
+  font-family: 'Poppins', sans-serif;
+}
+
+.signup-header-btn:hover, .signup-header-btn:focus {
+  background: linear-gradient(90deg, #007f87 0%, #00adb5 100%);
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 4px 16px rgba(0,173,181,0.25);
+  text-decoration: none;
+}
+.signup-header-btn svg {
+  stroke: #fff;
+  transition: stroke 0.3s;
+}
