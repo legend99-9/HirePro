@@ -117,7 +117,7 @@ header .navigation ul li {
   display: flex;
   justify-content: space-evenly; /* توزيع الروابط بالتساوي */
   align-items: center; /* محاذاة الروابط عموديًا */
-  background-color: #333; /* لون خلفية شريط التنقل */
+  background-color: #ffffff; /* لون خلفية شريط التنقل */
   padding: 10px 0;
 }
 
@@ -150,7 +150,12 @@ header .navigation a {
 header .navigation a:hover {
   color: #00adb5; /* Highlight link on hover */
 }
-
+button:hover {
+  background-color: #ffffff; /* Bright green when hovered */
+}
+a:hover {
+  color: #ffffff; /* Matching green for links */
+}
 /* Fix for Header Alignment */
 header {
   display: flex;
